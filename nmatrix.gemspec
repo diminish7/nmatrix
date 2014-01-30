@@ -6,8 +6,8 @@ require 'nmatrix/version'
 Gem::Specification.new do |gem|
   gem.name = "nmatrix"
   gem.version = NMatrix::VERSION::STRING
-  gem.summary = "NMatrix is an experimental linear algebra library for Ruby, written mostly in C." 
-  gem.description = "NMatrix is an experimental linear algebra library for Ruby, written mostly in C." 
+  gem.summary = "NMatrix is an experimental linear algebra library for Ruby, written mostly in C."
+  gem.description = "NMatrix is an experimental linear algebra library for Ruby, written mostly in C."
   gem.homepage = 'http://sciruby.com'
   gem.authors = ['John Woods', 'Chris Wailes', 'Aleksey Timin']
   gem.email =  ['john.o.woods@gmail.com']
@@ -22,7 +22,7 @@ which improve the portability of this project.
 
 Also required is ATLAS. Most Linux distributions and Mac
 versions include ATLAS, but you may wish to compile it
-yourself. The Ubuntu/Debian apt package for ATLAS WILL 
+yourself. The Ubuntu/Debian apt package for ATLAS WILL
 NOT WORK with NMatrix if LAPACK is also installed.
 
 More explicit instructions for NMatrix and SciRuby should
@@ -43,7 +43,7 @@ EOF
 
   gem.required_ruby_version = '>= 1.9'
 
-  gem.add_dependency 'rdoc', '>=4.0.1'
+  #gem.add_dependency 'rdoc', '>=4.0.1'
   #gem.add_dependency 'yard'
   gem.add_development_dependency 'rake'
   gem.add_development_dependency 'bundler'
