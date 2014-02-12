@@ -27,7 +27,6 @@
 
 require "mkmf"
 
-
 # Function derived from NArray's extconf.rb.
 def have_type(type, header=nil) #:nodoc:
   printf "checking for %s... ", type
@@ -177,7 +176,7 @@ end
 #   export CPLUS_INCLUDE_PATH=/usr/local/atlas/include
 # (substituting in the path of your cblas.h and clapack.h for the path I used). -- JW 8/27/12
 
-idefaults = {lapack: ["/usr/include/atlas"],
+idefaults = {lapack: ["/usr/local/atlas/include", "/usr/include/atlas"],
              cblas: ["/usr/local/atlas/include", "/usr/include/atlas"],
              atlas: ["/usr/local/atlas/include", "/usr/include/atlas"]}
 
